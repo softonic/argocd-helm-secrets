@@ -15,7 +15,7 @@ RUN apt-get update \
 
 ADD helm /usr/local/bin/
 # Install Helm3
-RUN wget -qO- https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar -xzO linux-amd64/helm > /usr/local/bin/helm.in \
+RUN wget -qO- https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar -xzO linux-amd64/helm > /usr/local/bin/helm.bin \
   && chmod +x /usr/local/bin/helm.bin
 
 # Install recent sops
